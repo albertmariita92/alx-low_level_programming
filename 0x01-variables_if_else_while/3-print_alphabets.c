@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
  * main - returns alphabets in both lower and upper cases
@@ -7,19 +8,15 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-	int ch = 'a';
-	int CH = 'A';
+{
+	char low;
 
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		ch++
-	}
-	while (CH <= 'Z')
-		CH++
-	{
-		putchar(ch);
-	}
+	for (low = 'a'; low <= 'z'; low++)
+	putchar(low);
+
+	for (low = 'A'; low <= 'Z'; low++)
+	putchar(low);
 	putchar('\n');
+
 	return (0);
 }
