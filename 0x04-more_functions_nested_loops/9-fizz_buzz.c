@@ -1,4 +1,4 @@
-lude "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -34,4 +34,6 @@ int main(void)
 
 	return (0);
 }
+
+
 
